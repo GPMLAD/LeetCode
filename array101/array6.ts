@@ -7,4 +7,3 @@ function removeElement(nums: number[], val: number): number {
   return nums.length
 }
 
-console.log(removeElement([1, 2, 2, 1, 2, 2, 3], 2))
