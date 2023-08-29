@@ -13,5 +13,3 @@ function checkIfExist(arr: number[]): boolean {
 
   return find
 }
-
-console.log(checkIfExist([0, 0]))
