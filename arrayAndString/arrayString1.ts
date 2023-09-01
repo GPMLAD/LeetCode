@@ -18,8 +18,3 @@ function pivotIndex(nums: number[]): number {
 
   return result
 }
-
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]))
-console.log(pivotIndex([1, 2, 3]))
-console.log(pivotIndex([2, 1, -1]))
-console.log(pivotIndex([-1, -1, 0, 1, 1, 0]))

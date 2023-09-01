@@ -8,5 +8,3 @@ function dominantIndex(nums: number[]): number {
   }
   return result
 }
-
-console.log(dominantIndex([3, 6, 1, 0]))
