@@ -9,7 +9,3 @@ function arrayPairSum(nums: number[]): number {
 
   return total
 }
-
-let nums = [1, 4, 3, 2]
-
-console.log(arrayPairSum(nums))
