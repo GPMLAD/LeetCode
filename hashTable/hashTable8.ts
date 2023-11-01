@@ -1,4 +1,37 @@
 function isIsomorphic(s: string, t: string): boolean {
+  if (s.length !== t.length) {
+    return false
+  }
+
+  const mapS = new Map<string, string>()
+  const mapT = new Map<string, string>()
+
+  for (let i = 0; i < s.length; i++) {
+    const charS = s[i]
+    const charT = t[i]
+
+    if (mapS.has(charS)) {
+      if (mapS.get(charS) !== charT) {
+        return false
+      }
+    } else {
+      mapS.set(charS, charT)
+    }
+
+    if (mapT.has(charT)) {
+      if (mapT.get(charT) !== charS) {
+        return false
+      }
+    } else {
+      mapT.set(charT, charS)
+    }
+  }
+
+  return true
+}
+
+/*
+function isIsomorphic(s: string, t: string): boolean {
   const mapS = new Map<number, string>()
   const mapT = new Map<string, string>()
 
@@ -31,4 +64,5 @@ function isIsomorphic(s: string, t: string): boolean {
   return true
 }
 
-console.log(isIsomorphic('paper', 'title'))
+
+*/
